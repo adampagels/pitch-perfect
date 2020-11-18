@@ -21,7 +21,10 @@
                                 <color key="backgroundColor" red="0.47725769377133898" green="1" blue="0.33751211506515244" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Record"/>
                                 <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oJI-rJ-DG8"/>
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6re-Oa-DYN"/>
+                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="daU-tO-I8r"/>
+                                    <action selector="stopRecordingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2vn-VG-QHI"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0SO-Ob-r1q">
@@ -50,7 +53,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="button" destination="Zez-KQ-kno" id="yyq-tJ-dLT"/>
+                        <outlet property="recordButton" destination="Zez-KQ-kno" id="DKi-3D-R1P"/>
                         <outlet property="recordingLabel" destination="0SO-Ob-r1q" id="dwj-Go-vQC"/>
+                        <outlet property="stopRecordingButton" destination="Wbh-BY-iKc" id="J78-sT-5sI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
