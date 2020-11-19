@@ -39,6 +39,7 @@
                                 <state key="normal" image="Stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SsK-3v-vJk"/>
+                                    <segue destination="L0M-Am-6r4" kind="show" id="ZFS-CB-VLT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -74,6 +75,7 @@
                         <viewLayoutGuide key="safeArea" id="7Hg-35-jVN"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="th5-Ih-XEv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ShS-a4-jgI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
