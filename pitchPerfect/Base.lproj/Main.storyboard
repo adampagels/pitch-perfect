@@ -72,8 +72,24 @@
                     <view key="view" contentMode="scaleToFill" id="EDV-sa-apj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dBX-dw-kSP">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dfe-k3-1hv">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="7Hg-35-jVN"/>
-                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7Hg-35-jVN" firstAttribute="bottom" secondItem="dBX-dw-kSP" secondAttribute="bottom" id="EcH-GR-a6i"/>
+                            <constraint firstItem="dBX-dw-kSP" firstAttribute="leading" secondItem="7Hg-35-jVN" secondAttribute="leading" id="JKK-F1-3jW"/>
+                            <constraint firstItem="dBX-dw-kSP" firstAttribute="top" secondItem="7Hg-35-jVN" secondAttribute="top" id="Kct-6u-sXc"/>
+                            <constraint firstItem="7Hg-35-jVN" firstAttribute="trailing" secondItem="dBX-dw-kSP" secondAttribute="trailing" id="Mdh-Fj-Yph"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="th5-Ih-XEv"/>
                 </viewController>
@@ -105,9 +121,6 @@
         <image name="recordButton" width="155" height="155"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
